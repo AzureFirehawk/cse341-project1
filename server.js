@@ -7,8 +7,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app
+    .use(bodyParser.json())
     .use('/', require('./routes'))
     .use('/contacts', require('./routes/contacts'));
+
+
 
 mongodb.initDb((err, db) => {
     if (err) {
