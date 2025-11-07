@@ -13,7 +13,17 @@
   "paths": {
     "/": {
       "get": {
-        "description": "Display all contacts from database.",
+        "description": "Hello World!",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/contacts/": {
+      "get": {
+        "description": "Display all contacts in the database.",
         "produces": [
           "application/json"
         ],
@@ -45,7 +55,7 @@
                   "example": "any"
                 },
                 "birthday": {
-                  "example": "yyyy-mm-dd"
+                  "example": "any"
                 }
               }
             }
@@ -61,7 +71,7 @@
         }
       }
     },
-    "/{id}": {
+    "/contacts/{id}": {
       "get": {
         "description": "Display details of specific contact from given ID.",
         "produces": [
