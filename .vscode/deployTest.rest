@@ -1,0 +1,6 @@
+# Get all
+GET https://cse341-project1-rccb.onrender.com/contacts
+
+# Get one
+GET https://cse341-project1-rccb.onrender.com/contacts/690627ba858f8e198a7ce0f2
+
