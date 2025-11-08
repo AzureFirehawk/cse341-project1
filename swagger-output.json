@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://cse341-project1-rccb.onrender.com/",
   "basePath": "/",
   "schemes": [
     "http"
@@ -13,7 +13,7 @@
   "paths": {
     "/": {
       "get": {
-        "description": "Hello World!",
+        "description": "",
         "responses": {
           "200": {
             "description": "OK"
@@ -23,7 +23,7 @@
     },
     "/contacts/": {
       "get": {
-        "description": "Display all contacts in the database.",
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -34,7 +34,7 @@
         }
       },
       "post": {
-        "description": "Create new contact in database. Required Inputs: First Name, Last Name, Email, Favorite Color, Birthday",
+        "description": "",
         "parameters": [
           {
             "name": "body",
@@ -73,7 +73,7 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "Display details of specific contact from given ID.",
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -92,7 +92,7 @@
         }
       },
       "put": {
-        "description": "Update contact in database with given ID. Required Inputs: First Name, Last Name, Email, Favorite Color, Birthday",
+        "description": "",
         "parameters": [
           {
             "name": "id",
@@ -135,7 +135,7 @@
         }
       },
       "delete": {
-        "description": "Delete contact from database with given ID.",
+        "description": "",
         "parameters": [
           {
             "name": "id",
