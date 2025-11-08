@@ -14,7 +14,7 @@
   "paths": {
     "/": {
       "get": {
-        "description": "",
+        "description": "Hello World",
         "responses": {
           "200": {
             "description": "OK"
@@ -24,7 +24,7 @@
     },
     "/contacts/": {
       "get": {
-        "description": "",
+        "description": "Display all contacts in the database",
         "produces": [
           "application/json"
         ],
@@ -35,7 +35,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Add new contact to the database. Required Inputs: First Name, Last Name, Email, Favorite Color, Birthday",
         "parameters": [
           {
             "name": "body",
@@ -74,7 +74,7 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "",
+        "description": "Display a single contact from the database by ID",
         "produces": [
           "application/json"
         ],
@@ -93,7 +93,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update a contact from the database by ID. Required Inputs: First Name, Last Name, Email, Favorite Color, Birthday",
         "parameters": [
           {
             "name": "id",
@@ -136,7 +136,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete a contact from the database by ID",
         "parameters": [
           {
             "name": "id",
