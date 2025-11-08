@@ -1,6 +1,32 @@
-# Get all
+### Get all
 GET https://cse341-project1-rccb.onrender.com/contacts
 
-# Get one
-GET https://cse341-project1-rccb.onrender.com/contacts/690627ba858f8e198a7ce0f2
+### Get one
+GET https://cse341-project1-rccb.onrender.com/contacts/690627c0858f8e198a7ce0f3
 
+### Create contact
+POST http://cse341-project1-rccb.onrender.com/contacts
+content-type: application/json
+
+{
+    "firstName": "Taylor",
+    "lastName": "Abbott",
+    "email": "tabbott2@gmail.com",
+    "favoriteColor": "Orange",
+    "Birthday": "1994-06-09"
+}
+
+### Update (PUT) contact
+PUT http://cse341-project1-rccb.onrender.com/contacts/690f9aad69cb6b13fa677368 
+content-type: application/json
+
+{
+    "firstName": "Taylor",
+    "lastName": "Abbott",
+    "email": "tabbott2@gmail.com",
+    "favoriteColor": "Orange",
+    "birthday": "1994-09-06"
+}
+
+### Delete contact
+DELETE http://cse341-project1-rccb.onrender.com/contacts/690f9aad69cb6b13fa677368 
